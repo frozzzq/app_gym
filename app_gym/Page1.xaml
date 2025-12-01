@@ -41,7 +41,7 @@
             BorderBrush="#FF31487A"
             BorderThickness="5"
             CornerRadius="10"
-            Background="#FF8FB3E2">
+            Background="#FFCAAE">
 
                     <StackPanel>
                         <TextBlock Text="SENSOR STATUS" FontSize="15" HorizontalAlignment="Center"

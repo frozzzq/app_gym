@@ -110,7 +110,7 @@
             <TextBlock Grid.Row="4" Grid.Column="0" Text="Email:" FontSize="15" VerticalAlignment="Center"/>
             <TextBox Grid.Row="4" Grid.Column="1" x:Name="correo" Width="180" Margin="5"/>
 
-          
+
             <Button Grid.Row="6" Grid.ColumnSpan="2"
                 x:Name="registro"
                 Content="Registrar"
@@ -118,10 +118,7 @@
                 Margin="0 20 0 0"
                 HorizontalAlignment="Center"
                 Click="registro_Click"/>
-
-            <TextBlock Text="HOLA " FontSize="100"/>
-
-
+                
         </Grid>
     </Grid>
 </Page>

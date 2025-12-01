@@ -7,7 +7,7 @@
       mc:Ignorable="d" 
       d:DesignHeight="500" d:DesignWidth="800"
       Title="Page1"
-      Background="White">
+      Background="#F4EFEB">
 
     <Grid>
 
@@ -23,9 +23,9 @@
             <RowDefinition Height="*"/>
             <RowDefinition Height="20"/>
         </Grid.RowDefinitions>
-        <Border Grid.Column="2" Grid.Row="1" BorderThickness="10,0,0,0" BorderBrush="DarkSlateBlue"
+        <Border Grid.Column="2" Grid.Row="1" BorderThickness="10,0,0,0" BorderBrush="#2F4157"
                 >
-            <Grid Grid.Row="1" Grid.Column="2" Background="#FFD9E1F1">
+            <Grid Grid.Row="1" Grid.Column="2" Background="#F4EFEB">
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="50"/>
                     <ColumnDefinition Width="*"/>
@@ -38,17 +38,17 @@
                 </Grid.RowDefinitions>
 
                 <Border Grid.Row="1" Grid.Column="1" 
-            BorderBrush="#FF31487A"
+            BorderBrush="#577C8E"
             BorderThickness="5"
             CornerRadius="10"
-            Background="#FFCAAE">
+            Background="#C7D9E5">
 
                     <StackPanel>
                         <TextBlock Text="SENSOR STATUS" FontSize="15" HorizontalAlignment="Center"
-                       Background="#FF31487A" Margin="0,0,0,10" Foreground="#FFD9E7EC"/>
+                       Background="#C7D9E5" Margin="0,10,0,10" FontWeight="Bold" Foreground="#2F4157"/>
                         <StackPanel Orientation="Horizontal">
-                            <TextBlock Text="Estatus:" FontSize="15" Margin="0,0,100,0"/>
-                            <TextBlock x:Name="estatus_sensor" HorizontalAlignment="Right"/>
+                            <TextBlock Text="Estatus:" FontWeight="Bold" FontSize="15" Foreground="#2F4157" Margin="10,0,100,0"/>
+                            <TextBlock x:Name="estatus_sensor"  HorizontalAlignment="Right"/>
                         </StackPanel>
                         <StackPanel Orientation="Horizontal">
                             
@@ -59,10 +59,10 @@
                         <StackPanel Orientation="Horizontal">
                             <TextBlock x:Name="estado" HorizontalAlignment="Left"/>
                         </StackPanel>
-                        <Button x:Name="verificar_sensor" Content="VERIFICACION" Click="verificar_sensor_Click"
-                                HorizontalAlignment="Center"/>
+                        <Button x:Name="verificar_sensor" Content="VERIFICACION" Width="80" Click="verificar_sensor_Click"
+                                HorizontalAlignment="Center" Background="#577C8E" Foreground="White" BorderThickness="0"/>
                         <Button x:Name="volver" Content="REGISTRO" Click="volver_Click" 
-                                HorizontalAlignment="Center" Width="80"/>
+                                HorizontalAlignment="Center" Width="80" Background="#577C8E" Foreground="White" Cursor="Hand" BorderThickness="0"/>
                         <TextBlock x:Name="verificar" HorizontalAlignment="Center"/>
 
 
@@ -97,25 +97,28 @@
             <TextBlock Grid.Row="0" Grid.ColumnSpan="2" 
                    Text="REGISTRO DE CLIENTE" 
                    FontSize="20" 
+                   FontWeight="Bold"    
                    HorizontalAlignment="Center" 
                    Margin="0 0 0 20"/>
 
-            <TextBlock Grid.Row="1" Grid.Column="0" Text="Nombre:" FontSize="15" VerticalAlignment="Center"/>
-            <TextBox Grid.Row="1" Grid.Column="1" x:Name="nombre" Width="180" Margin="5"/>
+            <TextBlock Grid.Row="1" Grid.Column="0" Text="Nombre:" FontSize="15" FontWeight="Bold" VerticalAlignment="Center"/>
+            <TextBox Grid.Row="1" Grid.Column="1" x:Name="nombre" Width="180" Margin="5" Background="Transparent" BorderThickness="0,0,0,2"/>
 
-            <TextBlock Grid.Row="2" Grid.Column="0" Text="Apellidos:" FontSize="15" VerticalAlignment="Center"/>
-            <TextBox Grid.Row="2" Grid.Column="1" x:Name="ap1" Width="180" Margin="5"/>
+            <TextBlock Grid.Row="2" Grid.Column="0" Text="Apellidos:" FontWeight="Bold" FontSize="15" VerticalAlignment="Center"/>
+            <TextBox Grid.Row="2" Grid.Column="1" x:Name="ap1" Width="180" Margin="5" Background="Transparent" BorderThickness="0,0,0,2"/>
 
 
-            <TextBlock Grid.Row="4" Grid.Column="0" Text="Email:" FontSize="15" VerticalAlignment="Center"/>
-            <TextBox Grid.Row="4" Grid.Column="1" x:Name="correo" Width="180" Margin="5"/>
+            <TextBlock Grid.Row="4" Grid.Column="0" Text="Email:" FontWeight="Bold" FontSize="15" VerticalAlignment="Center"/>
+            <TextBox Grid.Row="4" Grid.Column="1" x:Name="correo" Width="180" Margin="5" Background="Transparent" BorderThickness="0,0,0,2"/>
 
 
             <Button Grid.Row="6" Grid.ColumnSpan="2"
                 x:Name="registro"
                 Content="Registrar"
-                FontSize="16"
+                FontWeight="Bold"
+                FontSize="15"
                 Margin="0 20 0 0"
+                Background="#577C8E" Foreground="White"
                 HorizontalAlignment="Center"
                 Click="registro_Click"/>
                 

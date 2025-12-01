@@ -7,7 +7,7 @@
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="800"
       Title="Pinicio"
-      Background="White">
+      Background="#CFD9E5">
 
     <Grid>
 
@@ -22,22 +22,31 @@
             <RowDefinition Height="50"/>
         </Grid.RowDefinitions>
 
-        <Border Grid.Column="1" Grid.Row="1" BorderThickness="10" BorderBrush="Gray"
+        <Border Grid.Column="1" Grid.Row="1" BorderThickness="6" BorderBrush="#577C8E"
                 CornerRadius="10,10,10,10">
+            <Border.Background>
+                <LinearGradientBrush StartPoint="0,0" EndPoint="1,0.7">
+                    <GradientStop Color="#F4EFEB" Offset="0.0"/>
+                    <GradientStop Color="#C7D9E5" Offset="1.0" />
+                </LinearGradientBrush>
+
+            </Border.Background>
+
             <StackPanel>
-                <TextBlock Text="BIENVENIDO AL SISTEMA DE GIMNASIO" FontSize="20" 
+                <TextBlock Text="BIENVENIDO AL SISTEMA DE GIMNASIO" FontSize="20" Margin="0,8,0,10" FontWeight="Bold" Foreground="#2F4157"
         HorizontalAlignment="Center" VerticalAlignment="Top" Grid.Column="1" Grid.Row="1"/>
-                <TextBlock Text="numero telefonico: 66811982" VerticalAlignment="Bottom"/>
+                <TextBlock Text="Número telefonico: 66811982" VerticalAlignment="Bottom" Margin="15,1,1,15" Foreground="#FF222F3F" FontWeight="DemiBold"/>
 
                 <StackPanel Orientation="Horizontal">
-                    <TextBlock Text="Envia tu queja: "/>
-                    <TextBox x:Name="queja" Width="200" Margin="10,0,0,0" TextChanged="queja_TextChanged"/>
-                    <Button x:Name="enviar_queja" Content="ENVIAR" Margin="10,0,0,0" Click="enviar_queja_Click" />
+                    <TextBlock Text="Envia tu queja: " FontSize="14" Foreground="#FF222F3F" FontWeight="DemiBold" Margin="5,0,0,0"/>
+                    <TextBox x:Name="queja"  Width="200" Margin="10,0,0,0" TextChanged="queja_TextChanged" Background="Transparent" BorderThickness="0,0,1,1" />
+                    <Button x:Name="enviar_queja" Content="ENVIAR"  Margin="10,0,0,0" Background="#577C8E" Foreground="White" BorderBrush="Transparent" Click="enviar_queja_Click" 
+                            BorderThickness="0"/>
                 </StackPanel>
 
                 <StackPanel Orientation="Horizontal">
-                    <TextBlock Text="Estatus de conexion:" Margin="0,20,0,0"/>
-                    <TextBlock x:Name="estado_conexion" Margin="10,20,0,0"/>
+                    <TextBlock Text="Estatus de conexion:" FontSize="14" FontWeight="DemiBold" Margin="5,15,0,0"/>
+                    <TextBlock x:Name="estado_conexion" FontSize="15" Margin="10,20,0,0"/>
                 </StackPanel>
                 
             </StackPanel>

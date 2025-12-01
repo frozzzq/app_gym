@@ -5,7 +5,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:app_gym"
         mc:Ignorable="d"
-        Title="Window3" Height="450" Width="800">
+        Title="Window3" Height="450" Width="800"
+        Background="#CFD9E5">
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="150"/>
@@ -19,34 +20,44 @@
         </Grid.RowDefinitions>
 
 
-        <Border Grid.Column="1" Grid.Row="1" BorderThickness="7" BorderBrush="Gray"
+        <Border Grid.Column="1" Grid.Row="1" BorderThickness="7" BorderBrush="#577C8E"
         CornerRadius="5,5,5,5">
 
+
+            <Border.Background>
+                <LinearGradientBrush StartPoint="0,0" EndPoint="1,0.7">
+                    <GradientStop Color="#F4EFEB" Offset="0.0"/>
+                    <GradientStop Color="#C7D9E5" Offset="1.0" />
+                </LinearGradientBrush>
+
+            </Border.Background>
+
             <StackPanel Margin="10">
-                <TextBlock Text="MODIFICAR PLAN" FontSize="20" HorizontalAlignment="Center"/>
+                <TextBlock Text="MODIFICAR PLAN" FontSize="20" FontWeight="Bold" Foreground="#2F4157" HorizontalAlignment="Center"/>
                 <StackPanel Orientation="Horizontal">
-                    <TextBlock Text="Seleccione el plan a modificar:" FontSize="14" Margin="0,20,0,0"/>
+                    <TextBlock Text="Seleccione el plan a modificar:" FontWeight="DemiBold" Foreground="#2F4157" FontSize="14" Margin="0,20,0,0"/>
                     <ComboBox x:Name="seleccionar_plan" Width="200" Margin="10,20,0,0"
+                              Background="Transparent"
                               DisplayMemberPath="nombre_membresia"
                               SelectedValuePath="id_membresia"
                               SelectionChanged="seleccionarPlanes"/>
                 </StackPanel>
                 <StackPanel Orientation="Horizontal">
-                    <TextBlock Text="Nombre del plan:" Margin="0,0,10,0"/>
+                    <TextBlock Text="Nombre del plan:" Foreground="#2F4157" FontWeight="DemiBold" Margin="0,0,10,0"/>
                     <TextBlock x:Name="NP"/>
                 </StackPanel>
                 <StackPanel Orientation="Horizontal">
-                    <TextBlock Text="Costo del plan:" Margin="0,0,10,0"/>
+                    <TextBlock Text="Costo del plan:" Foreground="#2F4157" FontWeight="DemiBold" Margin="0,0,10,0"/>
                     <TextBlock x:Name="CP"/>
                 </StackPanel>
                 <StackPanel Orientation="Horizontal">
-                    <TextBlock Text="Duracion del plan:" Margin="0,0,10,0"/>
+                    <TextBlock Text="Duracion del plan:" Foreground="#2F4157" FontWeight="DemiBold" Margin="0,0,10,0"/>
                     <TextBlock x:Name="DP"/>
                 </StackPanel>
                 <StackPanel Orientation="Horizontal">
-                    <TextBlock Text="nuevo costo:" Margin="0,30,10,0"/>
-                    <TextBox x:Name="nuevo_costo" Width="200" Margin="0,30,0,0"/>
-                    <Button x:Name="guardar" Content="GUARDAR CAMBIOS" Click="guardar_Click"/>
+                    <TextBlock Text="Nuevo costo:" Foreground="#2F4157" FontWeight="DemiBold" Margin="0,30,10,0"/>
+                    <TextBox x:Name="nuevo_costo" Width="200" Background="Transparent" BorderThickness="0,0,1,1" Margin="0,30,0,0"/>
+                    <Button x:Name="guardar" Margin="10,25,0,0" Content="GUARDAR CAMBIOS" Background="#577C8E" Foreground="AliceBlue" FontWeight="DemiBold" BorderThickness="0" Click="guardar_Click"/>
                 </StackPanel>
 
             </StackPanel>

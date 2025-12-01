@@ -5,7 +5,9 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:app_gym"
         mc:Ignorable="d"
-        Title="Window1" Height="450" Width="800">
+        Title="Window1" Height="450" Width="800"
+        Background="#CFD9E5">
+        
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="150"/>
@@ -19,25 +21,34 @@
         </Grid.RowDefinitions>
 
 
-        <Border Grid.Column="1" Grid.Row="1" BorderThickness="7" BorderBrush="Gray"
+        <Border Grid.Column="1" Grid.Row="1" BorderThickness="7" BorderBrush="#577C8E"
             CornerRadius="5,5,5,5">
 
+            <Border.Background>
+                <LinearGradientBrush StartPoint="0,0" EndPoint="1,0.7">
+                    <GradientStop Color="#F4EFEB" Offset="0.0"/>
+                    <GradientStop Color="#C7D9E5" Offset="1.0" />
+                </LinearGradientBrush>
+
+            </Border.Background>
+
             <StackPanel Margin="10">
-                <TextBlock Text="AGREGAR PLAN" FontSize="20" HorizontalAlignment="Center"/>
+                <TextBlock Text="AGREGAR PLAN" FontSize="20" HorizontalAlignment="Center" FontWeight="Bold" Foreground="#2F4157"/>
                 <StackPanel Orientation="Horizontal" Margin="0,20,0,0">
-                    <TextBlock Text="Nombre del Plan:" FontSize="14" VerticalAlignment="Center"/>
-                    <TextBox x:Name="nombre_plan" Width="200" Margin="10,0,0,0"/> 
+                    <TextBlock Text="Nombre del Plan:" FontSize="14" FontWeight="DemiBold" Foreground="#2F4157" VerticalAlignment="Center"/>
+                    <TextBox x:Name="nombre_plan" Width="200" Margin="12,0,1,3" Background="Transparent" BorderThickness="0,0,1,1"/> 
                 </StackPanel>
                 <StackPanel Orientation="Horizontal">
-                    <TextBlock Text="costo del Plan:" FontSize="14" VerticalAlignment="Center"/>
-                    <TextBox x:Name="costo_plan" Width="200" Margin="28,0,0,0"/>
+                    <TextBlock Text="Costo del Plan:" FontSize="14" FontWeight="DemiBold" Foreground="#2F4157" VerticalAlignment="Center"/>
+                    <TextBox x:Name="costo_plan" Width="200" Margin="28,0,0,1" Background="Transparent" BorderThickness="0,0,1,1"/>
                 </StackPanel>
                 <StackPanel Orientation="Horizontal">
-                    <TextBlock Text="duracion del Plan:" FontSize="14" VerticalAlignment="Center"/>
-                    <TextBox x:Name="duracion_plan" Width="200" Margin="7,0,0,0"/>
-                    <TextBlock Text="(en dias)" FontSize="14" VerticalAlignment="Center" Margin="5,0,0,0"/> 
+                    <TextBlock Text="Duracion del Plan:" FontSize="14" FontWeight="DemiBold" Foreground="#2F4157" VerticalAlignment="Center"/>
+                    <TextBox x:Name="duracion_plan" Width="200" Margin="7,3,0,4" Background="Transparent" BorderThickness="0,0,1,1"/>
+                    <TextBlock Text="(en dias)" FontWeight="DemiBold" Foreground="#2F4157" FontSize="14" VerticalAlignment="Center" Margin="5,0,0,0"/> 
                 </StackPanel>
-                <Button x:Name="guardar_plan" Content="GUARDAR PLAN" HorizontalAlignment="Left" Margin="0,5,0,0" Click="guardar_plan_Click"/>
+                <Button x:Name="guardar_plan" Content="GUARDAR PLAN" Background="#577C8E" Foreground="White" FontWeight="DemiBold" BorderThickness="0" HorizontalAlignment="Left" Margin="0,10,0,5" 
+                        Click="guardar_plan_Click"/>
             </StackPanel>
 
         </Border>

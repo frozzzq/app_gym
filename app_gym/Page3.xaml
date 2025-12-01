@@ -5,9 +5,9 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:app_gym"
       mc:Ignorable="d" 
-      d:DesignHeight="450" d:DesignWidth="800"
+      d:DesignHeight="450" d:DesignWidth="700"
       Title="Page3"
-      Background="White">
+      Background="#CFD9E5">
 
     <Grid>
         <Grid.ColumnDefinitions>
@@ -22,19 +22,26 @@
         </Grid.RowDefinitions>
 
 
-        <Border Grid.Column="1" Grid.Row="1" BorderThickness="7" BorderBrush="Gray"
-                CornerRadius="5,5,5,5">
-            
+        <Border Grid.Column="1" Grid.Row="1" BorderThickness="7" BorderBrush="#577C8E" 
+                CornerRadius="5,5,5,5"
+                >
+            <Border.Background>
+                <LinearGradientBrush StartPoint="0,0" EndPoint="1,0.7">
+                    <GradientStop Color="#F4EFEB" Offset="0.0"/>
+                    <GradientStop Color="#C7D9E5" Offset="1.0" />
+                </LinearGradientBrush>
+
+            </Border.Background>
+
             <StackPanel Margin="10">
-                <TextBlock Text="CONFIGURACION" FontSize="20" HorizontalAlignment="Center"/>
-                <TextBlock Text="de planes" FontSize="20" HorizontalAlignment="Center"/>
-                <TextBlock Text="AJUSTES DE PLANES" FontSize="14"/>
+                <TextBlock Text="CONFIGURACION" FontSize="20" FontWeight="Bold" Foreground="#2F4157" HorizontalAlignment="Center"/>
+                <TextBlock Text="AJUSTES DE PLANES" FontSize="14" FontWeight="Medium" Foreground="#2F4157" Margin="0,5,0,5"/>
                 <StackPanel Orientation="Horizontal">
-                    <Button x:Name="agg_plan" Content="agregar" Click="agg_plan_Click" />
-                    <Button x:Name="mod_plan" Content="modificar" Margin="10,0,0,0" Click="mod_plan_Click"/>
-                    <Button x:Name="eli_plan" Content="eliminar" Margin="10,0,0,0" Click="eli_plan_Click"/> 
+                    <Button x:Name="agg_plan" Content="Agregar" FontSize="14" FontWeight="Medium" Foreground="#2F4157" Background="Transparent" BorderThickness="0.2"  Margin="10,0,0,5" Click="agg_plan_Click" />
+                    <Button x:Name="mod_plan" Content="Modificar" FontSize="14" FontWeight="Medium" Foreground="#2F4157" Background="Transparent" Margin="10,0,0,5"  BorderThickness="0.2" Click="mod_plan_Click"/>
+                    <Button x:Name="eli_plan" Content="Eliminar" FontSize="14" FontWeight="Medium" Foreground="#2F4157"  Background="Transparent" BorderThickness="0.2" Margin="10,0,0,5" Click="eli_plan_Click"/> 
                 </StackPanel>
-                <TextBlock Text="hola como estas"/>
+
             </StackPanel>
             
 

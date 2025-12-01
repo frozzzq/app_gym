@@ -24,7 +24,7 @@
         <Style.Triggers>
             <Trigger Property="IsMouseOver" Value="True">
                 <Setter Property="Margin" Value="0,0,0,5"/>
-                <Setter Property="Background" Value="#3C507D"/>
+                <Setter Property="Background" Value="#577C8E"/>
                 <Setter Property="Foreground" Value="#FFE0C58F"/>
                 <Setter Property="BorderBrush" Value="#77B5D3"/>
 
@@ -34,8 +34,8 @@
             <Trigger Property="IsChecked" Value="True">
                 <Setter Property ="Height" Value ="50"/>
                 <Setter Property="Margin" Value="0,0,0,5"/>
-                <Setter Property="Background" Value="#3c507d"/>
-                <Setter Property="Foreground" Value="#E19E11"/>
+                <Setter Property="Background" Value="#577C8E"/>
+                <Setter Property="Foreground" Value="#F4EFEB"/>
                 <Setter Property="BorderBrush" Value="#77B5D3"/>
 
             </Trigger>

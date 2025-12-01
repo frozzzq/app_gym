@@ -118,6 +118,10 @@
                 Margin="0 20 0 0"
                 HorizontalAlignment="Center"
                 Click="registro_Click"/>
+
+            <TextBlock Text="HOLA " FontSize="100"/>
+
+
         </Grid>
     </Grid>
 </Page>

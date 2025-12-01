@@ -1,0 +1,47 @@
+﻿<Window x:Class="app_gym.Window1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:app_gym"
+        mc:Ignorable="d"
+        Title="Window1" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="150"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="150"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="50"/>
+        </Grid.RowDefinitions>
+
+
+        <Border Grid.Column="1" Grid.Row="1" BorderThickness="7" BorderBrush="Gray"
+            CornerRadius="5,5,5,5">
+
+            <StackPanel Margin="10">
+                <TextBlock Text="AGREGAR PLAN" FontSize="20" HorizontalAlignment="Center"/>
+                <StackPanel Orientation="Horizontal" Margin="0,20,0,0">
+                    <TextBlock Text="Nombre del Plan:" FontSize="14" VerticalAlignment="Center"/>
+                    <TextBox x:Name="nombre_plan" Width="200" Margin="10,0,0,0"/> 
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Text="costo del Plan:" FontSize="14" VerticalAlignment="Center"/>
+                    <TextBox x:Name="costo_plan" Width="200" Margin="28,0,0,0"/>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Text="duracion del Plan:" FontSize="14" VerticalAlignment="Center"/>
+                    <TextBox x:Name="duracion_plan" Width="200" Margin="7,0,0,0"/>
+                    <TextBlock Text="(en dias)" FontSize="14" VerticalAlignment="Center" Margin="5,0,0,0"/> 
+                </StackPanel>
+                <Button x:Name="guardar_plan" Content="GUARDAR PLAN" HorizontalAlignment="Left" Margin="0,5,0,0" Click="guardar_plan_Click"/>
+            </StackPanel>
+
+        </Border>
+
+
+    </Grid>
+</Window>

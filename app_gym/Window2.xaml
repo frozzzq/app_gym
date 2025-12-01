@@ -72,7 +72,7 @@
                  Checked="RB4_Checked" Style="{StaticResource boton_menu}"/>
 
                 <RadioButton x:Name ="RB5" Content="Soporte" 
-                 Style="{StaticResource boton_menu}" Checked="RB5_Checked"/>
+                 Style="{StaticResource boton_menu}" Checked="RB5_Checked"  FontWeight="Bold" FontSize="13" Foreground="#2F4157" Margin="1,0,0,0"/>
 
 
 

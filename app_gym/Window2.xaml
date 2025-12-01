@@ -7,6 +7,7 @@
         mc:Ignorable="d"
         Title="Window2" Height="650" Width="1200" >
     <Grid>
+        
 
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="150"/>
@@ -17,37 +18,39 @@
         <Grid.RowDefinitions>
             <RowDefinition Height="30"/>
             <RowDefinition Height="*"/>
+          
         </Grid.RowDefinitions>
 
 
-        <Border Grid.Row="1">
+        <Border Grid.Row="0" Grid.RowSpan="2">
 
             <Border.Background>
                 <LinearGradientBrush StartPoint="0,0" EndPoint="1,0.7">
-                    <GradientStop Color="#112250" Offset="0.0"/>
-                    <GradientStop Color="#1C3A7C" Offset="1.0"/>
+                    <GradientStop Color="#F4EFEB" Offset="0.0"/>
+                    <GradientStop Color="#577C8E" Offset="1.0" />
                 </LinearGradientBrush>
 
             </Border.Background>
 
 
         </Border>
-        
-        
 
-        
-            
-        <TextBlock Text="BYLE" FontSize="20"
+
+
+
+
+        <TextBlock Text="BYLE" FontSize="20" FontWeight="Medium" Foreground="#2F4157"
             HorizontalAlignment="Center" Grid.Column="0"/>
 
-        <Grid Grid.Row="1" Grid.Column="1">
-            <Border BorderBrush="#E5D595" BorderThickness="10">
+        <Grid Grid.Row="0" Grid.Column="1" Grid.RowSpan="2">
+            <Border BorderBrush="#C7D9E5" BorderThickness="10">
                 <Frame x:Name="registrar_cliente" Grid.Column="1" Grid.Row="1" NavigationUIVisibility="Hidden">
                     
                 </Frame>
 
 
             </Border>
+            
         </Grid>
             
         
@@ -57,21 +60,19 @@
             <StackPanel Orientation="Vertical" Grid.Column="0"  Width="150" >
 
                 <RadioButton x:Name ="RBINICIO"   Style="{StaticResource boton_menu}"
-                             Content="Inicio" Checked="RBINICIO_Checked"/>
+                             Content="Inicio" FontWeight="Bold" FontSize="13" Foreground="#2F4157" Margin="1,0,0,0"/>
                 
                 <RadioButton x:Name ="RB1"  Checked="RadioButton_Checked" Style="{StaticResource boton_menu}"
-                             Content="registrar usuario"/>
-             
-                <RadioButton x:Name ="RB3" Content="Usuarios verificados" 
+                             Content="Registrar usuario" FontWeight="Bold" FontSize="13" Foreground="#2F4157" Margin="1,0,0,0"/>
+
+                <RadioButton x:Name ="RB3" Content="Usuarios verificados" FontWeight="Bold" FontSize="12" Foreground="#2F4157" Margin="1,0,0,0" 
                 Checked="RB2_Checked" Style="{StaticResource boton_menu}"/>
 
-                <RadioButton x:Name ="RB4" Content="Configuracion" 
+                <RadioButton x:Name ="RB4" Content="Configuracion"  FontWeight="Bold" FontSize="13" Foreground="#2F4157" Margin="1,0,0,0"
                  Checked="RB4_Checked" Style="{StaticResource boton_menu}"/>
 
                 <RadioButton x:Name ="RB5" Content="Soporte" 
                  Style="{StaticResource boton_menu}" Checked="RB5_Checked"/>
-
-
 
 
 

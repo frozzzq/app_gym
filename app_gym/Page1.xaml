@@ -60,9 +60,9 @@
                             <TextBlock x:Name="estado" HorizontalAlignment="Left"/>
                         </StackPanel>
                         <Button x:Name="verificar_sensor" Content="VERIFICACION" Width="80" Click="verificar_sensor_Click"
-                                HorizontalAlignment="Center" Background="#577C8E" Foreground="White" BorderThickness="0"/>
+                                HorizontalAlignment="Center" Background="#577C8E" Foreground="White" BorderThickness="0.75" BorderBrush="#FFE9E4E4"  Margin="0,10,0,10"/>
                         <Button x:Name="volver" Content="REGISTRO" Click="volver_Click" 
-                                HorizontalAlignment="Center" Width="80" Background="#577C8E" Foreground="White" Cursor="Hand" BorderThickness="0"/>
+                                HorizontalAlignment="Center" Width="80" Background="#577C8E" Foreground="White" BorderThickness="0.75" BorderBrush="#FFE9E4E4"  Margin="0,10,0,10"/>
                         <TextBlock x:Name="verificar" HorizontalAlignment="Center"/>
 
 
@@ -116,9 +116,10 @@
                 x:Name="registro"
                 Content="Registrar"
                 FontWeight="Bold"
-                FontSize="15"
+                FontSize="17"
                 Margin="0 20 0 0"
                 Background="#577C8E" Foreground="White"
+                BorderThickness="0.75" BorderBrush="#FFE9E4E4"    
                 HorizontalAlignment="Center"
                 Click="registro_Click"/>
                 

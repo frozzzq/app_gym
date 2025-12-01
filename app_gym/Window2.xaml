@@ -13,16 +13,17 @@
             <ColumnDefinition Width="150"/>
             <ColumnDefinition Width="*"/>
             
+            
         </Grid.ColumnDefinitions>
 
         <Grid.RowDefinitions>
             <RowDefinition Height="30"/>
             <RowDefinition Height="*"/>
-          
+            <RowDefinition Height="40"/>
         </Grid.RowDefinitions>
 
 
-        <Border Grid.Row="0" Grid.RowSpan="2">
+        <Border Grid.Row="0" Grid.RowSpan="3">
 
             <Border.Background>
                 <LinearGradientBrush StartPoint="0,0" EndPoint="1,0.7">
@@ -31,18 +32,24 @@
                 </LinearGradientBrush>
 
             </Border.Background>
-
-
         </Border>
 
+        <StackPanel Grid.Row="3">
+            <TextBlock>
+                No tienes una cuenta?
+            </TextBlock>
+            <Button x:Name="inicio_sesion" Content="iniciar sesion" Background="Transparent"
+                    Foreground="Blue" Click="Hyperlink_Click"/>
 
+        </StackPanel>
 
+        
 
 
         <TextBlock Text="BYLE" FontSize="20" FontWeight="Medium" Foreground="#2F4157"
             HorizontalAlignment="Center" Grid.Column="0"/>
 
-        <Grid Grid.Row="0" Grid.Column="1" Grid.RowSpan="2">
+        <Grid Grid.Row="0" Grid.Column="1" Grid.RowSpan="3">
             <Border BorderBrush="#C7D9E5" BorderThickness="10">
                 <Frame x:Name="registrar_cliente" Grid.Column="1" Grid.Row="1" NavigationUIVisibility="Hidden">
                     

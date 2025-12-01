@@ -33,7 +33,7 @@
             </Border.Background>
 
             <StackPanel>
-                <TextBlock Text="BIENVENIDO AL SISTEMA DE GIMNASIO" FontSize="20" Margin="0,8,0,10" FontWeight="Bold" Foreground="#2F4157"
+                <TextBlock Text="SOPORTE DEL SISTEMA" FontSize="20" Margin="0,8,0,10" FontWeight="Bold" Foreground="#2F4157"
         HorizontalAlignment="Center" VerticalAlignment="Top" Grid.Column="1" Grid.Row="1"/>
                 <TextBlock Text="Número telefonico: 66811982" VerticalAlignment="Bottom" Margin="15,1,1,15" Foreground="#FF222F3F" FontWeight="DemiBold"/>
 

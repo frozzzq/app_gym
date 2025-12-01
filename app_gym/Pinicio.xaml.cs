@@ -15,6 +15,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
+
 namespace app_gym
 {
     /// <summary>
@@ -36,7 +37,7 @@ namespace app_gym
         private Socket cliente;
         private void conexion_api()
         {
-            string IP = "25.2.73.185";
+            string IP = "25.4.244.203";
             int puerto = 5000;
 
             cliente = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
@@ -58,6 +59,7 @@ namespace app_gym
 
         private void enviar_queja_Click(object sender, RoutedEventArgs e)
         {
+
             string mensaje = queja.Text;
             byte[] datos = Encoding.UTF8.GetBytes(mensaje);
             cliente.Send(datos);

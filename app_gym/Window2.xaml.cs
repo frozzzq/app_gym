@@ -73,5 +73,13 @@ namespace app_gym
                 registrar_cliente.Navigate(new Pinicio());
             }
         }
+
+        private void Hyperlink_Click(object sender, RoutedEventArgs e)
+        {
+            iniciar_sesion registro = new iniciar_sesion();
+            registro.Show();
+        }
+
+
     }
 }

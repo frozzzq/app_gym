@@ -155,10 +155,9 @@ namespace app_gym
 
                     byte[] huellaBytes = (byte[])reader["huella"];
 
-                    // Convertir bytes → Template
+                   
                     DPFP.Template template = ConvertirBytesATemplate(huellaBytes);
 
-                    // 2. Verificar
                     if (VerificarHuella(features, template))
                     {
                         Dispatcher.Invoke(() =>

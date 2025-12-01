@@ -23,7 +23,7 @@ namespace app_gym
         {
             InitializeComponent();
             EsconderVentanaPrincipal();
-            registrar_cliente.Navigate(new Pinicio());
+            
 
         }
 
@@ -38,7 +38,7 @@ namespace app_gym
         {
             if (RB1.IsChecked == true)
             {
-                
+
                 registrar_cliente.Navigate(new Page1());
             }
         }
@@ -51,7 +51,7 @@ namespace app_gym
             }
         }
 
-        
+
 
         private void RB4_Checked(object sender, RoutedEventArgs e)
         {
@@ -61,6 +61,17 @@ namespace app_gym
             }
         }
 
+        private void RBINICIO_Checked(object sender, RoutedEventArgs e)
+        {
+            
+        }
 
+        private void RB5_Checked(object sender, RoutedEventArgs e)
+        {
+            if (RB5.IsChecked == true)
+            {
+                registrar_cliente.Navigate(new Pinicio());
+            }
+        }
     }
 }

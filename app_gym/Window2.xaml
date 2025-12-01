@@ -57,7 +57,7 @@
             <StackPanel Orientation="Vertical" Grid.Column="0"  Width="150" >
 
                 <RadioButton x:Name ="RBINICIO"   Style="{StaticResource boton_menu}"
-                             Content="Inicio"/>
+                             Content="Inicio" Checked="RBINICIO_Checked"/>
                 
                 <RadioButton x:Name ="RB1"  Checked="RadioButton_Checked" Style="{StaticResource boton_menu}"
                              Content="registrar usuario"/>
@@ -68,6 +68,8 @@
                 <RadioButton x:Name ="RB4" Content="Configuracion" 
                  Checked="RB4_Checked" Style="{StaticResource boton_menu}"/>
 
+                <RadioButton x:Name ="RB5" Content="Soporte" 
+                 Style="{StaticResource boton_menu}" Checked="RB5_Checked"/>
 
 
 

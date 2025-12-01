@@ -36,7 +36,7 @@ namespace app_gym
         private Socket cliente;
         private void conexion_api()
         {
-            string IP = "192.168.1.94";
+            string IP = "25.2.73.185";
             int puerto = 5000;
 
             cliente = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);

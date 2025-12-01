@@ -10,6 +10,42 @@
       Background="White">
 
     <Grid>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="150"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="150"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="50"/>
+        </Grid.RowDefinitions>
+
+        <Border Grid.Column="1" Grid.Row="1" BorderThickness="10" BorderBrush="Gray"
+                CornerRadius="10,10,10,10">
+            <StackPanel>
+                <TextBlock Text="BIENVENIDO AL SISTEMA DE GIMNASIO" FontSize="20" 
+        HorizontalAlignment="Center" VerticalAlignment="Top" Grid.Column="1" Grid.Row="1"/>
+                <TextBlock Text="numero telefonico: 66811982" VerticalAlignment="Bottom"/>
+
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Text="Envia tu queja: "/>
+                    <TextBox x:Name="queja" Width="200" Margin="10,0,0,0" TextChanged="queja_TextChanged"/>
+                    <Button x:Name="enviar_queja" Content="ENVIAR" Margin="10,0,0,0" Click="enviar_queja_Click" />
+                </StackPanel>
+
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Text="Estatus de conexion:" Margin="0,20,0,0"/>
+                    <TextBlock x:Name="estado_conexion" Margin="10,20,0,0"/>
+                </StackPanel>
+                
+            </StackPanel>
+                
+        </Border>
+            
+            
+        
         
     </Grid>
 </Page>

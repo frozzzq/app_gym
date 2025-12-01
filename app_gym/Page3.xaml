@@ -33,8 +33,10 @@
                     <Button x:Name="mod_plan" Content="modificar" Margin="10,0,0,0" Click="mod_plan_Click"/>
                     <Button x:Name="eli_plan" Content="eliminar" Margin="10,0,0,0" Click="eli_plan_Click"/> 
                 </StackPanel>
+                <TextBlock Text="hola como estas"/>
             </StackPanel>
             
+
         </Border>
 
 

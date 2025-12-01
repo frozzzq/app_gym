@@ -27,6 +27,7 @@
             
             <StackPanel Margin="10">
                 <TextBlock Text="CONFIGURACION" FontSize="20" HorizontalAlignment="Center"/>
+                <TextBlock Text="de planes" FontSize="20" HorizontalAlignment="Center"/>
                 <TextBlock Text="AJUSTES DE PLANES" FontSize="14"/>
                 <StackPanel Orientation="Horizontal">
                     <Button x:Name="agg_plan" Content="agregar" Click="agg_plan_Click" />

@@ -23,7 +23,7 @@
             <RowDefinition Height="*"/>
             <RowDefinition Height="20"/>
         </Grid.RowDefinitions>
-        <Border Grid.Column="2" Grid.Row="1" BorderThickness="10,0,0,0" BorderBrush="#577C8E"
+        <Border Grid.Column="2" Grid.Row="1" BorderThickness="3,0,0,0" BorderBrush="#577C8E"
                 >
             <Grid Grid.Row="1" Grid.Column="2" Background="#F4EFEB">
                 <Grid.ColumnDefinitions>
@@ -46,7 +46,7 @@
 
                     <StackPanel>
                         <TextBlock Text="SENSOR STATUS" FontSize="15" HorizontalAlignment="Center"
-                       Background="#C7D9E5" Margin="0,10,0,10" FontWeight="Bold" Foreground="#2F4157"/>
+                       Background="#C7D9E5" Margin="0,10,0,10" FontWeight="ExtraBlack" Foreground="#2F4157"/>
                         <StackPanel Orientation="Horizontal">
                             <TextBlock Text="Estatus:" FontWeight="Bold" FontSize="15" Foreground="#2F4157" Margin="10,0,100,0"/>
                             <TextBlock x:Name="estatus_sensor"  HorizontalAlignment="Right"/>
@@ -60,10 +60,10 @@
                         <StackPanel Orientation="Horizontal">
                             <TextBlock x:Name="estado" HorizontalAlignment="Left"/>
                         </StackPanel>
-                        <Button x:Name="verificar_sensor" Content="VERIFICACION" Width="80" Click="verificar_sensor_Click"
-                                HorizontalAlignment="Center" Background="#2F4157" Foreground="White" BorderThickness="0.75" BorderBrush="#FFE9E4E4"  Margin="0,10,0,10"/>
-                        <Button x:Name="volver" Content="REGISTRO" Click="volver_Click" 
-                                HorizontalAlignment="Center" Width="80" Background="#2F4157" Foreground="White" BorderThickness="0.75" BorderBrush="#FFE9E4E4"  Margin="0,10,0,10"/>
+                        <Button x:Name="verificar_sensor" Content="VERIFICACION" Width="90" Click="verificar_sensor_Click"
+                                HorizontalAlignment="Center" Background="#577C8E" FontWeight="DemiBold" Foreground="White" BorderThickness="0.75" BorderBrush="#FFE9E4E4"  Margin="0,10,0,10"/>
+                        <Button x:Name="volver" Content="REGISTRO" FontWeight="DemiBold" Click="volver_Click" 
+                                HorizontalAlignment="Center" Width="90" Background="#577C8E" Foreground="White" BorderThickness="0.75" BorderBrush="#FFE9E4E4"  Margin="0,10,0,10"/>
                         <TextBlock x:Name="verificar" HorizontalAlignment="Center"/>
 
 
@@ -98,28 +98,30 @@
             <TextBlock Grid.Row="0" Grid.ColumnSpan="2" 
                    Text="REGISTRO DE CLIENTE" 
                    FontSize="20" 
+                   Foreground="#2F4157"    
                    FontWeight="Bold"    
                    HorizontalAlignment="Center" 
                    Margin="0 0 0 20"/>
 
-            <TextBlock Grid.Row="1" Grid.Column="0" Text="Nombre:" FontSize="15" FontWeight="Bold" VerticalAlignment="Center"/>
+            <TextBlock Grid.Row="1" Grid.Column="0" Text="Nombre:" Foreground="#2F4157" FontSize="15" FontWeight="Bold" VerticalAlignment="Center"/>
             <TextBox Grid.Row="1" Grid.Column="1" x:Name="nombre" Width="180" Margin="5" Background="Transparent" BorderThickness="0,0,0,2"/>
 
-            <TextBlock Grid.Row="2" Grid.Column="0" Text="Apellidos:" FontWeight="Bold" FontSize="15" VerticalAlignment="Center"/>
+            <TextBlock Grid.Row="2" Grid.Column="0" Text="Apellidos:" Foreground="#2F4157" FontWeight="Bold" FontSize="15" VerticalAlignment="Center"/>
             <TextBox Grid.Row="2" Grid.Column="1" x:Name="ap1" Width="180" Margin="5" Background="Transparent" BorderThickness="0,0,0,2"/>
 
 
-            <TextBlock Grid.Row="4" Grid.Column="0" Text="Email:" FontWeight="Bold" FontSize="15" VerticalAlignment="Center"/>
+            <TextBlock Grid.Row="4" Grid.Column="0" Text="Email:" Foreground="#2F4157" FontWeight="Bold" FontSize="15" VerticalAlignment="Center"/>
             <TextBox Grid.Row="4" Grid.Column="1" x:Name="correo" Width="180" Margin="5" Background="Transparent" BorderThickness="0,0,0,2"/>
 
 
             <Button Grid.Row="6" Grid.ColumnSpan="2"
                 x:Name="registro"
                 Content="Registrar"
-                FontWeight="Bold"
+                FontWeight="DemiBold"
                 FontSize="17"
+                Width="90"
                 Margin="0 20 0 0"
-                Background="#2F4157" Foreground="White"
+                Background="#577C8E" Foreground="White"
                 BorderThickness="0.75" BorderBrush="#FFE9E4E4"    
                 HorizontalAlignment="Center"
                 Click="registro_Click"/>

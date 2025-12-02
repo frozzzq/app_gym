@@ -99,5 +99,13 @@ namespace app_gym
             LogIn.Show();
             
         }
+
+        private void RB6_Checked(object sender, RoutedEventArgs e)
+        {
+            if (RB6.IsChecked == true)
+            {
+                registrar_cliente.Navigate(new PlanesActivos());
+            }
+        }
     }
 }

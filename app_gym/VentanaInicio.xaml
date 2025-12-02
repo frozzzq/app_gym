@@ -5,9 +5,9 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:app_gym"
         mc:Ignorable="d"
-        Title="VentanaInicio" Height="500" Width="800"
-        WindowStartupLocation="CenterScreen"
-        Background="#E7E3E0">
+        Title="VentanaInicio" 
+        d:DesignHeight="500" d:DesignWidth="800"
+        Background="#C7D9E5">
 
     <Grid>
 

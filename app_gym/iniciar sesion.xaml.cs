@@ -70,5 +70,15 @@ namespace app_gym
 
         }
         SqlConnection miconexion;
+
+        private void Window_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+
+        }
+
+        private void True(object sender, MouseButtonEventArgs e)
+        {
+
+        }
     }
 }

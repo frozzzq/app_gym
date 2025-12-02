@@ -19,13 +19,22 @@ namespace app_gym
     /// </summary>
     public partial class Window2 : Window
     {
+        
+        public static string usuarioActual1 = "";
+        
         public Window2()
         {
             InitializeComponent();
             EsconderVentanaPrincipal();
-            
 
+            Window5 loginWindow = new Window5();
+            loginWindow.ShowDialog();
+
+
+            usuarioactual.Text = $"Usuario: {App.UsuarioActual}";
         }
+
+       
 
         public static void EsconderVentanaPrincipal()
         {
@@ -80,6 +89,16 @@ namespace app_gym
             registro.Show();
         }
 
+        private void RBINICIO_Checked_1(object sender, RoutedEventArgs e)
+        {
 
+        }
+
+        private void inicio_sesion_Click(object sender, RoutedEventArgs e)
+        {
+            Window5 LogIn = new Window5();
+            LogIn.Show();
+            
+        }
     }
 }

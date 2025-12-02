@@ -9,7 +9,6 @@
         WindowStyle="None"
         ResizeMode="NoResize"
         WindowStartupLocation="CenterScreen"
-        
         Background="Transparent"
         AllowsTransparency="True">
 
@@ -41,11 +40,11 @@
                     <TextBlock Text="Nombre de usuario" FontSize="22" HorizontalAlignment="Center"/>
                     <TextBox x:Name="nombreusuario" Height="40" Width="300"/>
                     <TextBlock Text="Contraseña" FontSize="22" HorizontalAlignment="Center"/>
-                    <TextBox x:Name="contraseña" Height="40" Width="300"/>
+                    <PasswordBox x:Name="contraseña" Height="40" Width="300"/>
                 </StackPanel>
 
                 <Button Content="Iniciar sesion" Width="200" Height="65" Background="#577C8E" Foreground="White" 
-       FontWeight="Bold" FontSize="20" Margin="0,30,0,0" Cursor="Hand" BorderThickness="0" />
+       FontWeight="Bold" FontSize="20" Margin="0,30,0,0" Cursor="Hand" BorderThickness="0" Click="Button_Click" />
             </StackPanel>
 
 

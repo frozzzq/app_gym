@@ -59,9 +59,16 @@ namespace app_gym
 
         private void enviar_queja_Click(object sender, RoutedEventArgs e)
         {
-
+            string usuario = App.UsuarioActual;
             string mensaje = queja.Text;
-            byte[] datos = Encoding.UTF8.GetBytes(mensaje);
+
+
+            string fecha = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss");
+
+            string mensajeCompleto = $"[{usuario}]{fecha} -> {mensaje}";
+
+
+            byte[] datos = Encoding.UTF8.GetBytes(mensajeCompleto);
             cliente.Send(datos);
         }
     }

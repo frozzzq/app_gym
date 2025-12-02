@@ -19,7 +19,7 @@
         <Grid.RowDefinitions>
             <RowDefinition Height="30"/>
             <RowDefinition Height="*"/>
-            <RowDefinition Height="40"/>
+            <RowDefinition Height="70"/>
         </Grid.RowDefinitions>
 
 
@@ -35,11 +35,12 @@
         </Border>
 
         <StackPanel Grid.Row="3">
-            <TextBlock>
-                No tienes una cuenta?
-            </TextBlock>
-            <Button x:Name="inicio_sesion" Content="iniciar sesion" Background="Transparent"
+            <TextBlock Text="No tienes una cuenta?"/>
+            <Button x:Name="registro" Content="Registrarse" Background="Transparent"
                     Foreground="Blue" Click="Hyperlink_Click"/>
+            <TextBlock Text="O" HorizontalAlignment="Center"/>
+            <Button x:Name="inicio_sesion" Content="iniciar sesion" Background="Transparent"
+        Foreground="Blue" Click="inicio_sesion_Click"/>
 
         </StackPanel>
 
@@ -67,7 +68,7 @@
             <StackPanel Orientation="Vertical" Grid.Column="0"  Width="150" >
 
                 <RadioButton x:Name ="RBINICIO"   Style="{StaticResource boton_menu}"
-                             Content="Inicio" FontWeight="Bold" FontSize="13" Foreground="#2F4157" Margin="1,0,0,0"/>
+                             Content="Inicio" FontWeight="Bold" FontSize="13" Foreground="#2F4157" Margin="1,0,0,0" Checked="RBINICIO_Checked_1"/>
                 
                 <RadioButton x:Name ="RB1"  Checked="RadioButton_Checked" Style="{StaticResource boton_menu}"
                              Content="Registrar usuario" FontWeight="Bold" FontSize="13" Foreground="#2F4157" Margin="1,0,0,0"/>
@@ -80,6 +81,8 @@
 
                 <RadioButton x:Name ="RB5" Content="Soporte" 
                  Style="{StaticResource boton_menu}" Checked="RB5_Checked"  FontWeight="Bold" FontSize="13" Foreground="#2F4157" Margin="1,0,0,0"/>
+
+                <TextBlock x:Name="usuarioactual" FontSize="13" Foreground="#2F4157"/>
 
 
 

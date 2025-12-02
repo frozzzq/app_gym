@@ -26,6 +26,7 @@ namespace app_gym
         {
             InitializeComponent();
             CargarPlanes();
+            
         }
 
 

@@ -70,11 +70,6 @@ namespace app_gym
             }
         }
 
-        private void RBINICIO_Checked(object sender, RoutedEventArgs e)
-        {
-            
-        }
-
         private void RB5_Checked(object sender, RoutedEventArgs e)
         {
             if (RB5.IsChecked == true)
@@ -91,6 +86,10 @@ namespace app_gym
 
         private void RBINICIO_Checked_1(object sender, RoutedEventArgs e)
         {
+            if (RBINICIO.IsChecked == true)
+            {
+                registrar_cliente.Navigate(new VentanaInicio());
+            }
 
         }
 

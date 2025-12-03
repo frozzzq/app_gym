@@ -86,7 +86,7 @@
                 </StackPanel>
 
                 <Button Content="Iniciar sesion" Width="200" Height="65" Background="#577C8E" Foreground="White" 
-       FontWeight="Bold" FontSize="20" Margin="0,30,0,0" Cursor="Hand" BorderThickness="0" Click="Button_Click" />
+                 FontWeight="Bold" FontSize="20" Margin="0,30,0,0" Cursor="Hand" BorderThickness="0" Click="Button_Click" />
             </StackPanel>
 
         </Grid>

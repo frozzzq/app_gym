@@ -49,40 +49,40 @@
                 </Grid.ColumnDefinitions>
 
                 <Button x:Name="btnMinimizar"       
-               Background="#577C8E"
+               Background="#A6BED1"
                BorderThickness="0"
                Content="-"
                Foreground="White"
-               FontSize="15"
-               FontWeight="Bold"
+               FontSize="20"
+               FontWeight="Black"
                Cursor="Hand"
                Grid.Column="1" Click="btnMinimizar_Click"/>
 
                 <Button x:Name="btnCerrar"       
-                Background="#577C8E"
+                Background="#A6BED1"
                 BorderThickness="0"
                 Content="x"
                 Foreground="White"
-                FontSize="15"
-                FontWeight="Bold"
+                FontSize="14"
+                FontWeight="Black"
                 Cursor="Hand"
-                Grid.Column="2" Height="30" VerticalAlignment="Top"/>
+                Grid.Column="2" Height="30" VerticalAlignment="Top" Click="btnCerrar_Click"/>
             </Grid>
 
 
             <StackPanel  HorizontalAlignment="Center" Grid.Row="1">
 
 
-                
-                <TextBlock Text="INICIO DE SESION" FontSize="70" FontWeight="Bold" FontFamily="Montserrat" Foreground="#2F4156" HorizontalAlignment="Center" Margin="0,20,0,0"/>
-                <TextBlock Text="Inicia sesion para administrar!" FontSize="25" Foreground="#577C8E" Margin="0,-10,0,40" HorizontalAlignment="Center"/>
+
+                <TextBlock Text="INICIO DE SESION" FontSize="60" FontWeight="Bold" FontFamily="Pericles Light" Foreground="#2F4156" HorizontalAlignment="Center" Margin="0,20,0,0"/>
+                <TextBlock Text="Inicia sesion para administrar!" FontSize="25" Foreground="#577C8E" Margin="0,10,0,40" HorizontalAlignment="Center"/>
 
 
                 <StackPanel Orientation="Vertical" HorizontalAlignment="Center">
                     <TextBlock Text="Nombre de usuario" FontSize="22" HorizontalAlignment="Center"/>
-                    <TextBox x:Name="nombreusuario" Height="40" Width="300" Background="Transparent" BorderThickness="0,0,1,1" BorderBrush="#2F4156"/>
+                    <TextBox x:Name="nombreusuario" Height="40" Width="300" Background="Transparent" BorderThickness="0,0,1,1" BorderBrush="#2F4156" FontSize="20" HorizontalAlignment="Center"/>
                     <TextBlock Text="Contraseña" FontSize="22" HorizontalAlignment="Center"/>
-                    <PasswordBox x:Name="contraseña" Height="40" Width="300" Background="Transparent" BorderThickness="0,0,1,1" BorderBrush="#2F4156"/>
+                    <PasswordBox x:Name="contraseña" Height="40" Width="300" Background="Transparent" BorderThickness="0,0,1,1" BorderBrush="#2F4156" FontSize="20" HorizontalAlignment="Center"/>
                 </StackPanel>
 
                 <Button Content="Iniciar sesion" Width="200" Height="65" Background="#577C8E" Foreground="White" 

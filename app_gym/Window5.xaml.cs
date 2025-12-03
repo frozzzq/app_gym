@@ -72,5 +72,10 @@ namespace app_gym
         {
             WindowState = WindowState.Minimized;
         }
+
+        private void btnCerrar_Click(object sender, RoutedEventArgs e)
+        {
+            Application.Current.Shutdown();
+        }
     }
 }

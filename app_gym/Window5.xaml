@@ -9,11 +9,12 @@
         WindowStyle="None"
         ResizeMode="NoResize"
         WindowStartupLocation="CenterScreen"
+        MouseDown="Window_MouseDown"
         Background="Transparent"
         AllowsTransparency="True">
 
-    <Border CornerRadius="50"
- BorderThickness="5">
+    <Border CornerRadius="10"
+            BorderThickness="5">
         <Border.BorderBrush>
             <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
                 <GradientStop Color="#F5EFEB" Offset="0"/>
@@ -30,25 +31,70 @@
 
 
 
+
         <Grid>
-            <StackPanel  HorizontalAlignment="Center">
-                <TextBlock Text="INICIO DE SESION" FontSize="70" FontWeight="Bold" FontFamily="Montserrat" Foreground="#2F4156" HorizontalAlignment="Center"/>
-                <TextBlock Text="inicia sesion para administrar!" FontSize="25" Foreground="#577C8E" Margin="0,-10,0,40" HorizontalAlignment="Center"/>
-                <!--TextBlock Text="¡Bienvenidos!" FontSize="22" FontWeight="SemiBold" Foreground="#F4444444" HorizontalAlignment="Center"/-->
+
+          
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="30"/>
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+
+
+            <Grid Grid.Row="0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition Width="25"/>
+                    <ColumnDefinition Width="25"/>
+                    <ColumnDefinition Width="5"/>
+                </Grid.ColumnDefinitions>
+
+                <Button x:Name="btnMinimizar"       
+               Background="#577C8E"
+               BorderThickness="0"
+               Content="-"
+               Foreground="White"
+               FontSize="15"
+               FontWeight="Bold"
+               Cursor="Hand"
+               Grid.Column="1" Click="btnMinimizar_Click"/>
+
+                <Button x:Name="btnCerrar"       
+                Background="#577C8E"
+                BorderThickness="0"
+                Content="x"
+                Foreground="White"
+                FontSize="15"
+                FontWeight="Bold"
+                Cursor="Hand"
+                Grid.Column="2" Height="30" VerticalAlignment="Top"/>
+            </Grid>
+
+
+            <StackPanel  HorizontalAlignment="Center" Grid.Row="1">
+
+
+                
+                <TextBlock Text="INICIO DE SESION" FontSize="70" FontWeight="Bold" FontFamily="Montserrat" Foreground="#2F4156" HorizontalAlignment="Center" Margin="0,20,0,0"/>
+                <TextBlock Text="Inicia sesion para administrar!" FontSize="25" Foreground="#577C8E" Margin="0,-10,0,40" HorizontalAlignment="Center"/>
+
 
                 <StackPanel Orientation="Vertical" HorizontalAlignment="Center">
                     <TextBlock Text="Nombre de usuario" FontSize="22" HorizontalAlignment="Center"/>
-                    <TextBox x:Name="nombreusuario" Height="40" Width="300"/>
+                    <TextBox x:Name="nombreusuario" Height="40" Width="300" Background="Transparent" BorderThickness="0,0,1,1" BorderBrush="#2F4156"/>
                     <TextBlock Text="Contraseña" FontSize="22" HorizontalAlignment="Center"/>
-                    <PasswordBox x:Name="contraseña" Height="40" Width="300"/>
+                    <PasswordBox x:Name="contraseña" Height="40" Width="300" Background="Transparent" BorderThickness="0,0,1,1" BorderBrush="#2F4156"/>
                 </StackPanel>
 
                 <Button Content="Iniciar sesion" Width="200" Height="65" Background="#577C8E" Foreground="White" 
        FontWeight="Bold" FontSize="20" Margin="0,30,0,0" Cursor="Hand" BorderThickness="0" Click="Button_Click" />
             </StackPanel>
 
-
         </Grid>
+        
+        
+
+
 
     </Border>
 </Window>

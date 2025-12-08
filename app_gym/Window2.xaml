@@ -86,7 +86,7 @@
                  Style="{StaticResource boton_menu}" Checked="RB6_Checked"  FontWeight="Bold" FontSize="13" Foreground="#2F4157" Margin="1,0,0,0"/>
 
                 <RadioButton x:Name="RB7" Content="Reportes mensuales"
-                 Style="{StaticResource boton_menu}" Checked="RB6_Checked"  FontWeight="Bold" FontSize="13" Foreground="#2F4157" Margin="1,0,0,0"/>
+                 Style="{StaticResource boton_menu}"  FontWeight="Bold" FontSize="13" Foreground="#2F4157" Margin="1,0,0,0"/>
 
 
                 <TextBlock x:Name="usuarioactual" FontSize="13" Foreground="#2F4157"/>

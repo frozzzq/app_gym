@@ -1,0 +1,66 @@
+﻿<Page x:Class="app_gym.planes_activos"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:app_gym"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="planes_activos">
+
+    <Grid>
+        <Border>
+
+
+
+            <Border.Background>
+                <LinearGradientBrush StartPoint="0,0" EndPoint="1,0.7">
+                    <GradientStop Color="#F4EFEB" Offset="0.0"/>
+                    <GradientStop Color="#577C8E" Offset="1.0" />
+                </LinearGradientBrush>
+
+            </Border.Background>
+
+            <StackPanel>
+
+
+                <TextBlock Text="Planes activos"
+                   FontSize="28"
+                   FontWeight="Bold"
+                   Foreground="#314759"
+                   Margin="25,5,0,20"/>
+
+
+                <DataGrid x:Name="TablaPlanes"
+                  AutoGenerateColumns="True"
+              
+                  Background="#FFFFFF"
+                  BorderBrush="#577C8E"
+                  BorderThickness="2"
+                  RowBackground="#F4EFEB"
+                  AlternatingRowBackground="#C7D9E5"
+                  HeadersVisibility="Column"
+                  GridLinesVisibility="None"
+                  Margin="0 15">
+
+
+
+                    
+
+                </DataGrid>
+
+                <TextBlock Text="Clases personalizadas"
+            FontSize="27"
+            FontWeight="Bold"
+            Foreground="#314759"
+            Margin="25,70,0,20"/>
+
+            </StackPanel>
+
+
+
+        </Border>
+
+
+    </Grid>
+</Page>

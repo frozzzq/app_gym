@@ -191,11 +191,11 @@ namespace app_gym
                 return;
             }
 
-            if (Template == null)
-            {
-                MessageBox.Show("Por favor registre la huella dactilar.");
-                return;
-            }
+            //if (Template == null)
+            //{
+            //    MessageBox.Show("Por favor registre la huella dactilar.");
+            //    return;
+            //}
 
             byte[] huellaB = convertirTemplateByte(Template);
 

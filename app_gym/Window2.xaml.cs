@@ -88,7 +88,7 @@ namespace app_gym
         {
             if (RBINICIO.IsChecked == true)
             {
-                registrar_cliente.Navigate(new VentanaInicio());
+                registrar_cliente.Navigate(new menuinicio());
             }
 
         }
@@ -104,7 +104,7 @@ namespace app_gym
         {
             if (RB6.IsChecked == true)
             {
-                registrar_cliente.Navigate(new PlanesActivos());
+                registrar_cliente.Navigate(new planes_activos());
             }
         }
     }

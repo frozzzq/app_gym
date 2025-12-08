@@ -88,6 +88,9 @@
     <Compile Include="iniciar sesion.xaml.cs">
       <DependentUpon>iniciar sesion.xaml</DependentUpon>
     </Compile>
+    <Compile Include="menuinicio.xaml.cs">
+      <DependentUpon>menuinicio.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Page1.xaml.cs">
       <DependentUpon>Page1.xaml</DependentUpon>
     </Compile>
@@ -100,11 +103,8 @@
     <Compile Include="Pinicio.xaml.cs">
       <DependentUpon>Pinicio.xaml</DependentUpon>
     </Compile>
-    <Compile Include="PlanesActivos.xaml.cs">
-      <DependentUpon>PlanesActivos.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="VentanaInicio.xaml.cs">
-      <DependentUpon>VentanaInicio.xaml</DependentUpon>
+    <Compile Include="planes_activos.xaml.cs">
+      <DependentUpon>planes_activos.xaml</DependentUpon>
     </Compile>
     <Compile Include="Window1.xaml.cs">
       <DependentUpon>Window1.xaml</DependentUpon>
@@ -137,6 +137,10 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="menuinicio.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Page1.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -153,17 +157,13 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="PlanesActivos.xaml">
+    <Page Include="planes_activos.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Styles\ButtonStyles.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
-    </Page>
-    <Page Include="VentanaInicio.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Window1.xaml">
       <SubType>Designer</SubType>

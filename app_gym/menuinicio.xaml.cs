@@ -10,16 +10,17 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
+using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 namespace app_gym
 {
     /// <summary>
-    /// Lógica de interacción para VentanaInicio.xaml
+    /// Lógica de interacción para menuinicio.xaml
     /// </summary>
-    public partial class VentanaInicio : Window
+    public partial class menuinicio : Page
     {
-        public VentanaInicio()
+        public menuinicio()
         {
             InitializeComponent();
         }
